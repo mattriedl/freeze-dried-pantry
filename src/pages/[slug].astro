@@ -4,6 +4,7 @@ import Base from '../layouts/Base.astro';
 import PostCard from '../components/PostCard.astro';
 import { SITE, CATEGORIES } from '../site.config.mjs';
 import { ADS, AD_SCRIPT } from '../ads.config.mjs';
+import { boxStyle } from '../lib/ad-slots-integration.mjs';
 const hasAds = AD_SCRIPT && Object.values(ADS).some((a) => a.code.trim());
 import { getPublishedPosts, relatedPosts, readingTime, formatDate, postUrl } from '../lib/posts.js';
 
@@ -125,12 +126,18 @@ if (data.faq.length) {
           {ADS.sidebar.code.trim() && (
             <aside class="ad-slot ad-sidebar" aria-label="Advertisement">
               <span class="ad-label">Advertisement</span>
-              <div class="ad-box" style={`width:${ADS.sidebar.width}px;min-height:${ADS.sidebar.height}px`} set:html={ADS.sidebar.code} />
+              <div class="ad-box" style={boxStyle(ADS.sidebar)} set:html={ADS.sidebar.code} />
             </aside>
           )}
         </aside>
       )}
     </div>
   </article>
+  {hasAds && (
+    <script is:inline>
+      // On phones, swap in the smaller mobile banner before the ad script loads.
+      if (innerWidth < 500) document.querySelectorAll('[data-gb-spot-mobile]').forEach((el) => el.setAttribute('data-gb-spot', el.getAttribute('data-gb-spot-mobile')));
+    </script>
+  )}
   {hasAds && <script is:inline async src={AD_SCRIPT}></script>}
 </Base>

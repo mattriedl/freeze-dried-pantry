@@ -166,7 +166,9 @@ a:hover { color: var(--brand-ink); }
 /* Ad slots: fixed reserved size so nothing shifts while ads load */
 .ad-slot { margin: 2em auto; display: flex; flex-direction: column; align-items: center; gap: 4px; max-width: 100%; }
 .ad-label { font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
-.ad-box { max-width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.ad-box { width: var(--w); min-height: var(--h); max-width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+@media (max-width: 499px) { .ad-box { width: var(--mw, var(--w)); min-height: var(--mh, var(--h)); } }
+.ad-after-intro { margin: 1.4em auto 1.8em; }
 .ad-box img { display: block; }
 .sidebar { display: flex; flex-direction: column; gap: 28px; }
 .sidebar .toc { position: static; }

@@ -7,10 +7,14 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { ADS } from '../ads.config.mjs';
 
+export const boxStyle = (ad) =>
+  `--w:${ad.width}px;--h:${ad.height}px` +
+  (ad.mobileWidth ? `;--mw:${ad.mobileWidth}px;--mh:${ad.mobileHeight}px` : '');
+
 const slot = (key, ad) =>
   `<aside class="ad-slot ad-${key}" aria-label="Advertisement">` +
   `<span class="ad-label">Advertisement</span>` +
-  `<div class="ad-box" style="width:${ad.width}px;min-height:${ad.height}px">${ad.code}</div>` +
+  `<div class="ad-box" style="${boxStyle(ad)}">${ad.code}</div>` +
   `</aside>`;
 
 function insertAds(html) {
