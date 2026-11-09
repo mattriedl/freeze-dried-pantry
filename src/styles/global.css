@@ -1,16 +1,48 @@
 :root {
-  --ink: #1b2a33;
-  --ink-soft: #4a5d68;
-  --bg: #fbfaf7;
-  --surface: #ffffff;
-  --frost: #e8f2f6;
+  /* Light theme: warm, low-glare neutrals instead of pure white */
+  --ink: #1f2b31;
+  --ink-soft: #4c5a61;
+  --bg: #efebe4;
+  --surface: #f7f4ef;
+  --frost: #e2e9ea;
   --brand: #1f5f7a;
   --brand-ink: #134257;
-  --accent: #d9732c;
-  --line: #e2e6e8;
+  --accent: #b85d1d;
+  --line: #dcd6cc;
+  --muted: #8f9a9f;
   --radius: 12px;
   --measure: 70ch;
   color-scheme: light;
+}
+
+/* Dark theme: chosen with the toggle, or by the device setting when no choice is saved */
+:root[data-theme="dark"] {
+  --ink: #e1e7ea;
+  --ink-soft: #a8b5bb;
+  --bg: #12191d;
+  --surface: #1a2328;
+  --frost: #1e2c33;
+  --brand: #7cbcd8;
+  --brand-ink: #a8d6ea;
+  --accent: #f0a46a;
+  --line: #2b3940;
+  --muted: #6f7f86;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink: #e1e7ea;
+    --ink-soft: #a8b5bb;
+    --bg: #12191d;
+    --surface: #1a2328;
+    --frost: #1e2c33;
+    --brand: #7cbcd8;
+    --brand-ink: #a8d6ea;
+    --accent: #f0a46a;
+    --line: #2b3940;
+    --muted: #6f7f86;
+    color-scheme: dark;
+  }
 }
 
 *,
@@ -32,7 +64,7 @@ a:hover { color: var(--brand-ink); }
 
 .wrap { width: min(1120px, 100% - 32px); margin-inline: auto; }
 .skip { position: absolute; left: -999px; }
-.skip:focus { left: 16px; top: 16px; background: #fff; padding: 8px 12px; z-index: 10; }
+.skip:focus { left: 16px; top: 16px; background: var(--surface); color: var(--ink); padding: 8px 12px; z-index: 10; }
 
 /* Header */
 .site-header { background: var(--surface); border-bottom: 1px solid var(--line); }
@@ -67,7 +99,7 @@ a:hover { color: var(--brand-ink); }
 @media (min-width: 980px) { .article-grid { grid-template-columns: minmax(0, var(--measure)) 260px; justify-content: space-between; } }
 .crumbs { font-size: 0.88rem; color: var(--ink-soft); margin: 0 0 14px; }
 .crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; }
-.crumbs li + li::before { content: '›'; margin-right: 6px; color: #9aa7ad; }
+.crumbs li + li::before { content: '›'; margin-right: 6px; color: var(--muted); }
 .article h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 12px; }
 .meta { color: var(--ink-soft); font-size: 0.92rem; margin-bottom: 24px; }
 .lede { font-size: 1.15rem; color: var(--ink-soft); }
@@ -100,7 +132,7 @@ a:hover { color: var(--brand-ink); }
 .disclosure { font-size: 0.86rem; color: var(--ink-soft); background: var(--frost); border-radius: var(--radius); padding: 10px 14px; }
 
 /* Footer */
-.site-footer { background: #13303d; color: #cfdde3; margin-top: 40px; padding: 40px 0 20px; font-size: 0.95rem; }
+.site-footer { background: #10262f; color: #cfdde3; margin-top: 40px; padding: 40px 0 20px; font-size: 0.95rem; }
 .site-footer a { color: #e6f0f4; text-decoration: none; }
 .site-footer a:hover { text-decoration: underline; }
 .footer-grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
@@ -112,3 +144,21 @@ a:hover { color: var(--brand-ink); }
 
 .page { padding: 40px 0 56px; }
 .page .prose h1 { font-size: 2.2rem; line-height: 1.2; }
+
+/* Theme toggle */
+.header-tools { order: 2; margin-left: auto; }
+.theme-toggle { order: 3; }
+@media (max-width: 760px) {
+  .header-tools { order: 3; width: 100%; margin-left: 0; }
+  .theme-toggle { order: 2; margin-left: auto; }
+}
+.theme-toggle { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink-soft); cursor: pointer; flex: none; }
+.theme-toggle:hover { color: var(--brand); border-color: var(--brand); }
+.theme-toggle svg { width: 18px; height: 18px; }
+.theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun { display: block; }
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: none; }
+}
