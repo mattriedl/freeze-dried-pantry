@@ -1,0 +1,25 @@
+{
+  "name": "freeze-dried-pantry",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "generate": "node scripts/generate-post.mjs",
+    "indexnow": "node scripts/indexnow.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.4.8"
+  },
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  }
+}

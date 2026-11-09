@@ -1,0 +1,125 @@
+---
+import { render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PostCard from '../components/PostCard.astro';
+import { SITE, CATEGORIES } from '../site.config.mjs';
+import { getPublishedPosts, relatedPosts, readingTime, formatDate, postUrl } from '../lib/posts.js';
+
+export async function getStaticPaths() {
+  const posts = await getPublishedPosts();
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post, all: posts } }));
+}
+
+const { post, all } = Astro.props;
+const { data } = post;
+const { Content, headings } = await render(post);
+const toc = headings.filter((h) => h.depth === 2);
+const cat = CATEGORIES[data.category];
+const related = relatedPosts(post, all, 4);
+const url = new URL(postUrl(post), SITE.url).href;
+const modified = data.updatedDate ?? data.pubDate;
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: data.title,
+    description: data.description,
+    datePublished: data.pubDate.toISOString(),
+    dateModified: modified.toISOString(),
+    mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+    url,
+    image: `${SITE.url}/og-default.png`,
+    keywords: [data.keyword, ...data.secondaryKeywords].join(', '),
+    articleSection: cat.name,
+    author: { '@type': 'Organization', name: SITE.author, url: `${SITE.url}/about/` },
+    publisher: { '@id': `${SITE.url}/#org` },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` },
+      { '@type': 'ListItem', position: 2, name: cat.name, item: `${SITE.url}/category/${data.category}/` },
+      { '@type': 'ListItem', position: 3, name: data.title, item: url },
+    ],
+  },
+];
+if (data.faq.length) {
+  schema.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: data.faq.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  });
+}
+---
+<Base
+  title={data.title}
+  description={data.description}
+  type="article"
+  publishedTime={data.pubDate}
+  modifiedTime={modified}
+  schema={schema}
+>
+  <article class="article wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href={`/category/${data.category}/`}>{cat.name}</a></li>
+      </ol>
+    </nav>
+    <div class="article-grid">
+      <div>
+        <h1>{data.title}</h1>
+        <p class="meta">
+          By <a href="/about/">{SITE.author}</a> ·
+          {data.updatedDate ? <>Updated <time datetime={modified.toISOString()}>{formatDate(modified)}</time></> :
+            <time datetime={data.pubDate.toISOString()}>{formatDate(data.pubDate)}</time>}
+          · {readingTime(post.body)} min read
+        </p>
+        <div class="prose">
+          <Content />
+
+          {data.faq.length > 0 && (
+            <section class="faq" aria-labelledby="faq-h">
+              <h2 id="faq-h">Frequently asked questions</h2>
+              {data.faq.map((f) => (
+                <details>
+                  <summary>{f.q}</summary>
+                  <p>{f.a}</p>
+                </details>
+              ))}
+            </section>
+          )}
+
+          <p class="disclosure">Some links on this site may be affiliate links. We may earn a commission at no extra cost to you. <a href="/affiliate-disclosure/">Learn more</a>.</p>
+        </div>
+
+        {related.length > 0 && (
+          <section class="related" aria-labelledby="rel-h">
+            <h2 id="rel-h">Keep reading</h2>
+            <div class="grid">
+              {related.map((p) => <PostCard post={p} />)}
+            </div>
+          </section>
+        )}
+      </div>
+
+      {toc.length > 2 && (
+        <aside>
+          <nav class="toc" aria-label="On this page">
+            <p>On this page</p>
+            <ol>
+              {toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}
+              {data.faq.length > 0 && <li><a href="#faq-h">FAQ</a></li>}
+            </ol>
+          </nav>
+        </aside>
+      )}
+    </div>
+  </article>
+</Base>

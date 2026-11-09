@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import PostCard from '../components/PostCard.astro';
+import { SITE, CATEGORIES } from '../site.config.mjs';
+import { getPublishedPosts } from '../lib/posts.js';
+
+const posts = await getPublishedPosts();
+const latest = posts.slice(0, 12);
+const counts = Object.fromEntries(Object.keys(CATEGORIES).map((k) => [k, posts.filter((p) => p.data.category === k).length]));
+---
+<Base title={`${SITE.name}: Home Freeze Drying Recipes & Guides`} description={SITE.description}>
+  <section class="hero">
+    <div class="wrap">
+      <h1>Home freeze drying, explained step by step</h1>
+      <p>Recipes for candy, fruit, eggs, meat and full meals, plus straight answers on which freeze dryer to buy, what it costs to run and how to fix it when something goes wrong.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Latest guides</h2>
+      <div class="grid">
+        {latest.map((p) => <PostCard post={p} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Browse by topic</h2>
+      <div class="grid cat-grid">
+        {Object.entries(CATEGORIES).filter(([k]) => counts[k] > 0).map(([k, c]) => (
+          <div class="card">
+            <a class="title" href={`/category/${k}/`}>{c.name}</a>
+            <p>{c.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>

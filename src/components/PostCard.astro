@@ -1,0 +1,10 @@
+---
+import { CATEGORIES } from '../site.config.mjs';
+import { postUrl } from '../lib/posts.js';
+const { post, showCat = true } = Astro.props;
+---
+<div class="card">
+  {showCat && <span class="pill">{CATEGORIES[post.data.category].name}</span>}
+  <a class="title" href={postUrl(post)}>{post.data.title}</a>
+  <p>{post.data.description}</p>
+</div>

@@ -1,0 +1,55 @@
+---
+import Base from '../../layouts/Base.astro';
+import PostCard from '../../components/PostCard.astro';
+import { SITE, CATEGORIES } from '../../site.config.mjs';
+import { getPublishedPosts, postUrl } from '../../lib/posts.js';
+
+export async function getStaticPaths() {
+  const posts = await getPublishedPosts();
+  // Only build hubs that have content, so we never publish thin, empty pages.
+  return Object.keys(CATEGORIES)
+    .map((cat) => ({ params: { cat }, props: { posts: posts.filter((p) => p.data.category === cat) } }))
+    .filter((x) => x.props.posts.length > 0);
+}
+
+const { cat } = Astro.params;
+const { posts } = Astro.props;
+const c = CATEGORIES[cat];
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: c.name,
+    description: c.description,
+    url: `${SITE.url}/category/${cat}/`,
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: posts.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}${postUrl(p)}`, name: p.data.title })),
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` },
+      { '@type': 'ListItem', position: 2, name: c.name, item: `${SITE.url}/category/${cat}/` },
+    ],
+  },
+];
+---
+<Base title={`${c.name}: Freeze Drying Guides`} description={`${c.description} Step-by-step guides from ${SITE.name}.`} schema={schema}>
+  <section class="hero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li>{c.name}</li></ol></nav>
+      <h1>{c.name}</h1>
+      <p>{c.description}</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <div class="grid">
+        {posts.map((p) => <PostCard post={p} showCat={false} />)}
+      </div>
+    </div>
+  </section>
+</Base>

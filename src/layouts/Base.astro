@@ -1,0 +1,82 @@
+---
+import SEO from '../components/SEO.astro';
+import { SITE, CATEGORIES } from '../site.config.mjs';
+import '../styles/global.css';
+
+const props = Astro.props;
+const year = new Date().getFullYear();
+const nav = ['basics', 'candy', 'fruit', 'meat-eggs-dairy', 'meals', 'machines'];
+
+const siteSchema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${SITE.url}/#org`,
+    name: SITE.name,
+    url: `${SITE.url}/`,
+    logo: `${SITE.url}/logo.png`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${SITE.url}/#website`,
+    name: SITE.name,
+    url: `${SITE.url}/`,
+    publisher: { '@id': `${SITE.url}/#org` },
+  },
+];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1f5f7a" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <SEO {...props} schema={[...siteSchema, ...(props.schema ?? [])]} />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="/" aria-label={`${SITE.name} home`}>
+          <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 2l2.2 5.4L24 5l-2.4 5.8L28 13l-6 2.2L28 19l-6.4 2.2L24 27l-5.8-2.4L16 30l-2.2-5.4L8 27l2.4-5.8L4 19l6-2.2L4 13l6.4-2.2L8 5l5.8 2.4z" opacity=".9"/></svg>
+          <span>{SITE.name}</span>
+        </a>
+        <nav aria-label="Main">
+          <ul>
+            {nav.map((c) => <li><a href={`/category/${c}/`}>{CATEGORIES[c].name}</a></li>)}
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <p class="brand-foot">{SITE.name}</p>
+          <p>{SITE.tagline}.</p>
+        </div>
+        <div>
+          <p class="foot-h">Topics</p>
+          <ul>
+            {Object.entries(CATEGORIES).map(([k, c]) => <li><a href={`/category/${k}/`}>{c.name}</a></li>)}
+          </ul>
+        </div>
+        <div>
+          <p class="foot-h">Site</p>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/affiliate-disclosure/">Affiliate disclosure</a></li>
+            <li><a href="/privacy/">Privacy policy</a></li>
+            <li><a href="/rss.xml">RSS feed</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="wrap copy">© {year} {SITE.name}. Always follow your freeze dryer manufacturer's instructions and safe food handling guidance.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+---
+import Page from '../layouts/Page.astro';
+import { SITE } from '../site.config.mjs';
+---
+<Page title={`About ${SITE.name}`} description={`${SITE.name} publishes practical guides to home freeze drying: recipes, settings, storage, buyer guides and troubleshooting.`}>
+  <p>{SITE.name} is an independent site about home freeze drying. We cover what you can freeze dry, how to prep it, how long it lasts, and how to choose, run and maintain a home freeze dryer.</p>
+  <h2>How our guides are made</h2>
+  <p>Our articles are researched and written with the help of AI tools, drawing on freeze dryer manufacturer guidance and published food safety recommendations. Machine settings and cycle times vary by model, load size and humidity, so always treat your manufacturer's manual as the final word.</p>
+  <h2>Corrections</h2>
+  <p>If something in a guide is wrong or out of date, please <a href="/contact/">let us know</a> and we'll fix it.</p>
+  <h2>Independence</h2>
+  <p>We are not affiliated with any freeze dryer manufacturer. Some links may earn us a commission; see our <a href="/affiliate-disclosure/">affiliate disclosure</a>.</p>
+</Page>

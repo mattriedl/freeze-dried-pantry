@@ -1,0 +1,58 @@
+---
+import { SITE } from '../site.config.mjs';
+
+interface Props {
+  title: string;
+  description: string;
+  type?: 'website' | 'article';
+  image?: string;
+  noindex?: boolean;
+  publishedTime?: Date;
+  modifiedTime?: Date;
+  schema?: object[];
+}
+
+const {
+  title,
+  description,
+  type = 'website',
+  image = '/og-default.png',
+  noindex = false,
+  publishedTime,
+  modifiedTime,
+  schema = [],
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, SITE.url).href;
+const imageUrl = new URL(image, SITE.url).href;
+// Add the brand only when it fits, so titles aren't cut off in search results (~60 chars).
+const branded = `${title} | ${SITE.name}`;
+const fullTitle = title.includes(SITE.name) || branded.length > 60 ? title : branded;
+---
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1'} />
+
+<meta property="og:site_name" content={SITE.name} />
+<meta property="og:locale" content={SITE.locale} />
+<meta property="og:type" content={type} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+{publishedTime && <meta property="article:published_time" content={publishedTime.toISOString()} />}
+{modifiedTime && <meta property="article:modified_time" content={modifiedTime.toISOString()} />}
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl} />
+{SITE.twitter && <meta name="twitter:site" content={SITE.twitter} />}
+
+<link rel="alternate" type="application/rss+xml" title={SITE.name} href="/rss.xml" />
+<link rel="sitemap" href="/sitemap-index.xml" />
+
+{schema.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
