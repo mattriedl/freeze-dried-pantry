@@ -6,7 +6,7 @@ Astro static site with SEO built into every page, plus an automated article pipe
 
 - **Articles** live in `src/content/posts/*.md`. The file name is the URL (`/how-to-freeze-dry-eggs/`).
 - **Keyword queue**: `data/keyword-queue.json` (149 freeze-drying keywords from OpenSEO, highest priority first).
-- **Auto-poster**: `.github/workflows/autopost.yml` runs hourly. `scripts/generate-post.mjs` decides on a randomized schedule whether to post this hour, writes the next article with the Claude API, runs quality checks (length, structure, keyword placement, no fake first-hand claims, no broken internal links), builds the site, commits, and pings IndexNow.
+- **Auto-poster**: a scheduled Claude task opens this repo, follows `AUTOPOST.md`, writes the next article from the queue, runs `scripts/autopost.mjs check` (length, structure, keyword placement, no fake first-hand claims, no broken internal links), builds, commits, pushes and notifies Bing via IndexNow. No paid API is involved.
 - **Cloudflare Pages** rebuilds the site on every push.
 
 ## Built-in SEO
@@ -18,20 +18,16 @@ Per-page title, meta description, canonical URL, Open Graph/Twitter tags · JSON
 | Where | Name | What it does |
 |---|---|---|
 | `src/site.config.mjs` | `url`, `name`, `contactEmail` | Your domain and brand. Change before launch. |
-| GitHub secret | `ANTHROPIC_API_KEY` | Claude API key used to write articles |
-| GitHub variable | `AUTOPOST_ENABLED` | `true` turns on hourly auto-posting |
-| GitHub variable | `POSTS_PER_DAY` | Average posts per day (default `1`) |
-| GitHub variable | `REVIEW_MODE` | `true` opens a pull request per article instead of publishing |
-| GitHub variable | `ANTHROPIC_MODEL` | Optional model override (default `claude-sonnet-5-5`) |
+| `AUTOPOST.md` | writing rules | The instructions every scheduled run follows. Edit to change tone, length or rules. |
+| `data/keyword-queue.json` | `priority`, `status` | Which topic is next. Add keywords here to extend the queue. |
 
 ## Commands
 
 ```
 npm run dev                         # local preview at http://localhost:4321
 npm run build                       # build to dist/
-npm run generate                    # write one article now (needs ANTHROPIC_API_KEY)
-node scripts/generate-post.mjs --dry-run              # show the next prompt, no API call
-node scripts/generate-post.mjs --keyword "how to freeze dry meat"
+node scripts/autopost.mjs next      # show the next topic and linkable articles
+node scripts/autopost.mjs check <slug>
 ```
 
 ## Cloudflare Pages build settings

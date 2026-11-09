@@ -6,8 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "generate": "node scripts/generate-post.mjs",
-    "indexnow": "node scripts/indexnow.mjs"
+    "indexnow": "node scripts/indexnow.mjs",
+    "next": "node scripts/autopost.mjs next"
   },
   "keywords": [],
   "author": "",
