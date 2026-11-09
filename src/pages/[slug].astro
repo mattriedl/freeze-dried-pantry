@@ -3,7 +3,8 @@ import { render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import PostCard from '../components/PostCard.astro';
 import { SITE, CATEGORIES } from '../site.config.mjs';
-import { ADS } from '../ads.config.mjs';
+import { ADS, AD_SCRIPT } from '../ads.config.mjs';
+const hasAds = AD_SCRIPT && Object.values(ADS).some((a) => a.code.trim());
 import { getPublishedPosts, relatedPosts, readingTime, formatDate, postUrl } from '../lib/posts.js';
 
 export async function getStaticPaths() {
@@ -131,4 +132,5 @@ if (data.faq.length) {
       )}
     </div>
   </article>
+  {hasAds && <script is:inline async src={AD_SCRIPT}></script>}
 </Base>
