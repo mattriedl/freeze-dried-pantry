@@ -1,5 +1,6 @@
 ---
 import SEO from '../components/SEO.astro';
+import Analytics from '../components/Analytics.astro';
 import { SITE, CATEGORIES } from '../site.config.mjs';
 import '../styles/global.css';
 
@@ -31,6 +32,7 @@ const siteSchema = [
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <Analytics part="head" />
     <meta name="theme-color" content="#efebe4" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#12191d" media="(prefers-color-scheme: dark)" />
     <script is:inline>
@@ -41,6 +43,7 @@ const siteSchema = [
     <SEO {...props} schema={[...siteSchema, ...(props.schema ?? [])]} />
   </head>
   <body>
+    <Analytics part="body" />
     <a class="skip" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="wrap header-inner">

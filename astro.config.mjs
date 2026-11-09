@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import fs from 'node:fs';
 import { SITE } from './src/site.config.mjs';
+import adSlots from './src/lib/ad-slots-integration.mjs';
 
 // lastmod for each article, read from its frontmatter, so search engines recrawl updated pages.
 const lastmod = {};
@@ -16,6 +17,7 @@ export default defineConfig({
   trailingSlash: 'always',
   build: { format: 'directory' },
   integrations: [
+    adSlots(),
     sitemap({
       filter: (page) => !page.includes('/404'),
       serialize(item) {

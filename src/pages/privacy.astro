@@ -5,6 +5,9 @@ import { SITE } from '../site.config.mjs';
 <Page title="Privacy Policy" description={`The privacy policy for ${SITE.name}: what data is collected when you visit, and how it is used.`}>
   <p>Last updated: November 2026.</p>
   <p>{SITE.name} does not require accounts and does not collect personal information through forms. Our host, Cloudflare, processes standard request data (such as IP address and browser type) to deliver and secure the site.</p>
-  <p>If we add analytics or advertising in the future, those services may use cookies, and we will update this page to describe them.</p>
+  <h2>Analytics</h2>
+  <p>We use Google Tag Manager and Google Analytics to understand which pages are read and how visitors find the site. These services use cookies and collect information such as pages visited, approximate location, device and browser type. Google's use of this data is described in <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites that use its services</a>. You can opt out with the <a href="https://tools.google.com/dlpage/gaoptout">Google Analytics opt-out browser add-on</a>.</p>
+  <h2>Advertising</h2>
+  <p>Some pages show banner advertisements. Ad providers may use cookies or similar technology to show and measure ads. Ads are labeled "Advertisement."</p>
   <p>Questions: <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>.</p>
 </Page>

@@ -3,6 +3,7 @@ import { render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import PostCard from '../components/PostCard.astro';
 import { SITE, CATEGORIES } from '../site.config.mjs';
+import { ADS } from '../ads.config.mjs';
 import { getPublishedPosts, relatedPosts, readingTime, formatDate, postUrl } from '../lib/posts.js';
 
 export async function getStaticPaths() {
@@ -109,15 +110,23 @@ if (data.faq.length) {
         )}
       </div>
 
-      {toc.length > 2 && (
-        <aside>
-          <nav class="toc" aria-label="On this page">
-            <p>On this page</p>
-            <ol>
-              {toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}
-              {data.faq.length > 0 && <li><a href="#faq-h">FAQ</a></li>}
-            </ol>
-          </nav>
+      {(toc.length > 2 || ADS.sidebar.code.trim()) && (
+        <aside class="sidebar">
+          {toc.length > 2 && (
+            <nav class="toc" aria-label="On this page">
+              <p>On this page</p>
+              <ol>
+                {toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}
+                {data.faq.length > 0 && <li><a href="#faq-h">FAQ</a></li>}
+              </ol>
+            </nav>
+          )}
+          {ADS.sidebar.code.trim() && (
+            <aside class="ad-slot ad-sidebar" aria-label="Advertisement">
+              <span class="ad-label">Advertisement</span>
+              <div class="ad-box" style={`width:${ADS.sidebar.width}px;min-height:${ADS.sidebar.height}px`} set:html={ADS.sidebar.code} />
+            </aside>
+          )}
         </aside>
       )}
     </div>
