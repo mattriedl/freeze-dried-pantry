@@ -2,17 +2,17 @@
 //  SITE SETTINGS — the only file you need to edit before launch.
 // ─────────────────────────────────────────────────────────────
 export const SITE = {
-  // Replace with your real domain once registered (no trailing slash).
-  url: 'https://example-freeze-dry.com',
-  name: 'Freeze Dried Pantry',
+  // Live domain (no trailing slash).
+  url: 'https://freezedryclub.com',
+  name: 'Freeze Dry Club',
   tagline: 'Home freeze drying recipes, how-tos and honest buyer guides',
   description:
     'Home freeze drying guides: step-by-step recipes for candy, fruit, eggs, meat and meals, plus freeze dryer buyer guides, fixes and storage tips.',
-  author: 'The Freeze Dried Pantry Team',
+  author: 'The Freeze Dry Club Team',
   locale: 'en_US',
   // Optional: set once you have them.
   twitter: '',
-  contactEmail: 'hello@example-freeze-dry.com',
+  contactEmail: 'hello@freezedryclub.com',
   // Amazon Associates tag or similar, used by affiliate links (optional).
   affiliateTag: '',
 };

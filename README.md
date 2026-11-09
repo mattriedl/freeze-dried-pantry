@@ -1,4 +1,4 @@
-# Freeze Dried Pantry
+# Freeze Dry Club (freezedryclub.com)
 
 Astro static site with SEO built into every page, plus an automated article pipeline.
 
