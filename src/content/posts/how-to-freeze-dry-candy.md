@@ -1,12 +1,15 @@
 ---
-title: "How to Freeze Dry Candy at Home (Step-by-Step)"
-description: "How to freeze dry candy at home: which candies puff best, tray prep, candy mode settings, cycle times, storage and fixes for chewy or melted results."
+title: "How to Freeze Dry Candy at Home (+ Best Candy to Use)"
+description: "How to make freeze dried candy at home: the best candy to freeze dry, candy mode settings, cycle times, storage and fixes for chewy or melted candy."
 keyword: "how to freeze dry candy"
-secondaryKeywords: ["freeze dryer candy", "how to freeze dry candy at home", "freeze dried candy"]
+secondaryKeywords: ["freeze dried candy", "how to make freeze dried candy", "freeze dryer candy", "best candy to freeze dry", "how to freeze dry candy at home", "how long to freeze dry candy", "harvest right candy mode"]
 category: "candy"
 type: "howto"
 pubDate: 2026-11-09T08:30:00.000Z
+updatedDate: 2026-11-10T00:45:00.000Z
 faq:
+  - q: "What is the best candy to freeze dry?"
+    a: "Skittles, Jolly Ranchers, saltwater taffy, marshmallows and gummy candies give the biggest change: they puff up and turn light and crunchy. Plain chocolate and hard mints change very little."
   - q: "How long does it take to freeze dry candy?"
     a: "With a candy mode or warm shelves and no pre-freeze, most candy takes about 2 to 6 hours. Standard full freeze cycles can take 12 hours or more."
   - q: "Do you need to freeze candy before freeze drying it?"
@@ -20,7 +23,7 @@ faq:
 ---
 To freeze dry candy at home, spread the candy out on lined trays with plenty of space, load it into a warm freeze dryer without pre-freezing, and run a candy mode or a short cycle with shelf heat around 135–150°F. In about 2 to 6 hours the vacuum and heat make the candy puff up, crack open and turn light and crunchy.
 
-That's the whole trick. Below is the step-by-step method, which candies work best, and how to fix the most common problems.
+That's how to make freeze dried candy in a nutshell. Below is the step-by-step method, the best candy to freeze dry, the settings to use, and how to fix the most common problems.
 
 ## Why candy puffs in a freeze dryer
 
@@ -36,7 +39,7 @@ That's why candy behaves so differently from fruit or meat. You're not just dryi
 - Mylar bags or airtight jars, plus desiccant packs, for storage
 - Gloves, if you're packaging candy to share or sell
 
-## Best candies to freeze dry
+## Best candy to freeze dry
 
 Some candies transform completely. Others barely change.
 
@@ -63,6 +66,14 @@ Not sure where to start? Skittles, taffy and Jolly Ranchers are the most reliabl
 6. **Run the cycle.** Most candy finishes in about 2 to 6 hours. Some machines run longer by default; you can check early.
 7. **Check doneness.** Finished candy is fully puffed, light, and snaps cleanly. Break a piece open: the center should be dry and airy, not chewy or sticky.
 8. **Package right away.** Move candy into Mylar bags or airtight jars with a desiccant pack within minutes of opening the door.
+
+## How long does it take to freeze dry candy?
+
+With warm shelves and no pre-freeze, most candy finishes in about **2 to 6 hours**. Small, thin candies like Skittles are on the faster end; taffy, larger gummies and full trays take longer.
+
+Newer Harvest Right freeze dryers have a candy setting (named differently depending on the model and software version) that skips the freeze step and runs warm shelves. On a machine without one, use custom settings: skip or shorten the initial freeze and set the shelf temperature limit around 135-150°F. Check your manual, since menus vary between models.
+
+If you run candy on a standard full cycle instead, it can take 12 hours or more and may not puff as much, because the candy never gets warm enough to soften while it's under vacuum.
 
 ## How long does freeze dried candy last?
 

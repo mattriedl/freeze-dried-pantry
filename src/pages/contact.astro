@@ -2,6 +2,6 @@
 import Page from '../layouts/Page.astro';
 import { SITE } from '../site.config.mjs';
 ---
-<Page title="Contact" description={`Get in touch with ${SITE.name} with questions, corrections or partnership inquiries.`}>
+<Page title="Contact" description={`Get in touch with ${SITE.name} with questions, corrections or partnership inquiries.`} noindex>
   <p>Questions, corrections or partnership inquiries: email <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>.</p>
 </Page>

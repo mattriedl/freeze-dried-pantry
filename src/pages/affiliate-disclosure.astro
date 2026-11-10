@@ -2,7 +2,7 @@
 import Page from '../layouts/Page.astro';
 import { SITE } from '../site.config.mjs';
 ---
-<Page title="Affiliate Disclosure" description={`How ${SITE.name} earns money through affiliate links, and how that does and doesn't affect our recommendations.`}>
+<Page title="Affiliate Disclosure" description={`How ${SITE.name} earns money through affiliate links, and how that does and doesn't affect our recommendations.`} noindex>
   <p>Some links on {SITE.name} are affiliate links. If you buy through one, we may earn a commission at no extra cost to you.</p>
   <p>As an Amazon Associate we may earn from qualifying purchases. Commissions help keep the site running; they don't decide what we recommend.</p>
 </Page>

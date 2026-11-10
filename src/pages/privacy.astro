@@ -2,7 +2,7 @@
 import Page from '../layouts/Page.astro';
 import { SITE } from '../site.config.mjs';
 ---
-<Page title="Privacy Policy" description={`The privacy policy for ${SITE.name}: what data is collected when you visit, and how it is used.`}>
+<Page title="Privacy Policy" description={`The privacy policy for ${SITE.name}: what data is collected when you visit, and how it is used.`} noindex>
   <p>Last updated: November 2026.</p>
   <p>{SITE.name} does not require accounts and does not collect personal information through forms. Our host, Cloudflare, processes standard request data (such as IP address and browser type) to deliver and secure the site.</p>
   <h2>Analytics</h2>

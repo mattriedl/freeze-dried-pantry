@@ -1,11 +1,12 @@
 ---
 title: "How to Freeze Dry Food at Home: A Beginner's Guide"
-description: "How to freeze dry food at home, step by step: prep, tray loading, cycle times, how to tell it's dry, storage, shelf life and the best foods to start with."
+description: "How to freeze dry food at home step by step: what you can freeze dry, prep, tray loading, cycle times, storage and shelf life. A guide for beginners."
 keyword: "how to freeze dry food"
-secondaryKeywords: ["how to freeze dry food at home", "how to freeze dry at home", "freeze drying ideas"]
+secondaryKeywords: ["how to freeze dry food at home", "home freeze drying", "how to freeze dry at home", "freeze drying for beginners", "what can you freeze dry", "best foods to freeze dry", "freeze drying ideas"]
 category: "basics"
 type: "howto"
 pubDate: 2026-11-09T19:48:44.694Z
+updatedDate: 2026-11-10T00:45:00.000Z
 faq:
   - q: "Can you freeze dry food without a freeze dryer?"
     a: "Not reliably. Freezer and dry ice methods can remove some moisture, but they can't consistently get food dry enough for safe long-term storage. For shelf-stable results, you need a vacuum freeze dryer."
@@ -22,7 +23,7 @@ faq:
 ---
 To freeze dry food at home, you prep the food into thin, even pieces, spread it on trays, and run it through a home freeze dryer. The machine freezes the food very cold, pulls a vacuum, and gently warms the shelves so the ice turns straight into vapor. A typical cycle takes about 20 to 40 hours, and then you seal the dry food in airtight packaging right away.
 
-That's the short version. Below is the full process for how to freeze dry food at home, from picking your first batch to storing it so it lasts.
+That's the short version. Below is the full home freeze drying process for beginners, from what you can freeze dry and picking your first batch to storing it so it lasts.
 
 ## How freeze drying works (in plain English)
 
@@ -127,9 +128,9 @@ Freeze drying is a great way to preserve food, but it has limits. Keep these rul
 
 Raw eggs are a good example. They freeze dry well, but the powder must be cooked fully after rehydrating. Our guide on [how to freeze dry eggs](/how-to-freeze-dry-eggs/) walks through that safely.
 
-## Freeze drying ideas: what to try first
+## What can you freeze dry? Best foods to start with
 
-If you're new, start with easy foods that dry evenly and show you how your machine works. Here are some beginner-friendly freeze drying ideas:
+You can freeze dry almost any food that contains water. If you're new, start with easy foods that dry evenly and show you how your machine works. Here are the best foods to freeze dry first, plus a few more freeze drying ideas:
 
 - **Fruit:** strawberries, bananas, apples, peaches, mangoes, blueberries (scored).
 - **Vegetables:** corn, peas, diced peppers, green beans, cooked potatoes.

@@ -1,11 +1,12 @@
 ---
-title: "How to Freeze Dry Eggs: Raw or Scrambled, Step by Step"
-description: "How to freeze dry eggs at home, raw or scrambled: tray prep, cycle times, powdering, storage, shelf life and how to rehydrate freeze dried eggs safely."
+title: "Freeze Dried Eggs: How to Freeze Dry Eggs at Home"
+description: "Freeze dried eggs step by step: raw or scrambled, how many eggs per tray, cycle times, egg powder, shelf life and how to rehydrate them safely."
 keyword: "how to freeze dry eggs"
-secondaryKeywords: ["freeze dryer eggs", "freeze dried eggs", "how to freeze dry eggs at home", "how to freeze dry scrambled eggs"]
+secondaryKeywords: ["freeze dried eggs", "freeze dryer eggs", "how to freeze dry eggs at home", "freeze dried egg powder", "how long do freeze dried eggs last", "how to rehydrate freeze dried eggs", "how to freeze dry scrambled eggs"]
 category: "meat-eggs-dairy"
 type: "howto"
 pubDate: 2026-11-09T09:00:00.000Z
+updatedDate: 2026-11-10T00:45:00.000Z
 faq:
   - q: "Is it better to freeze dry eggs raw or cooked?"
     a: "Raw whisked eggs are more versatile because they work like fresh eggs in baking and scrambles. Cooked scrambled eggs are ready to eat after rehydrating and are handy for camping meals."
@@ -54,8 +55,14 @@ Most people with backyard chickens freeze dry **raw** eggs because one batch cov
 4. **Pre-freeze the trays.** Freezing the trays solid in a chest freezer first keeps liquid from spilling and can shorten the cycle. Many people use tray lids or stack trays on spacers in the freezer.
 5. **Load and run a normal cycle.** Use your machine's standard (non-candy) settings. Expect roughly 20 to 30 hours or more, depending on load size, room temperature and humidity.
 6. **Check for dryness.** Eggs are done when they're light, crisp and break apart easily with no cool, damp or chewy spots. Press the center of the thickest piece. If in doubt, add extra dry time.
-7. **Powder it (optional).** Pulse the dried egg in a blender into a fine powder. Powder packs tighter and measures more easily.
+7. **Powder it (optional).** Pulse the dried egg in a blender into a fine freeze dried egg powder. Powder packs tighter and measures more easily.
 8. **Package right away.** Seal in Mylar bags with oxygen absorbers or airtight jars as soon as possible so the eggs don't pick up moisture.
+
+## How many eggs fit on a freeze dryer tray?
+
+It depends on your machine's tray size. A common rule of thumb is **roughly a dozen eggs per tray in a medium home freeze dryer**, with fewer on small trays and more on large ones.
+
+Depth matters more than the count. Keep liquid egg **no deeper than about half an inch**, and leave a little room at the edges so it doesn't spill when you slide the tray in. If you're unsure, measure how many whisked eggs fill one tray to that depth once, then write the number down for next time.
 
 ## How to freeze dry scrambled eggs
 

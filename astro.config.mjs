@@ -19,7 +19,8 @@ export default defineConfig({
   integrations: [
     adSlots(),
     sitemap({
-      filter: (page) => !page.includes('/404'),
+      // Utility pages are noindex, so keep them out of the sitemap too.
+      filter: (page) => !/\/(404|privacy|contact|affiliate-disclosure)\/?$/.test(new URL(page).pathname),
       serialize(item) {
         const slug = new URL(item.url).pathname.replace(/^\/|\/$/g, '');
         if (lastmod[slug]) item.lastmod = lastmod[slug];

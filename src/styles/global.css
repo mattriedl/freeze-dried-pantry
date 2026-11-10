@@ -175,3 +175,6 @@ a:hover { color: var(--brand-ink); }
 .ad-sidebar { margin: 0; }
 @media (min-width: 980px) { .sidebar { position: sticky; top: 16px; align-self: start; } }
 @media (max-width: 979px) { .ad-sidebar { display: none; } }
+
+.hub-intro { margin-bottom: 28px; font-size: 1.08rem; }
+.hub-intro p:first-child { margin-top: 0; }

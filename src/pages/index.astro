@@ -6,13 +6,28 @@ import { getPublishedPosts } from '../lib/posts.js';
 
 const posts = await getPublishedPosts();
 const latest = posts.slice(0, 12);
+const start = ['how-to-freeze-dry-food', 'freeze-dryer-vs-dehydrator', 'how-to-freeze-dry-candy', 'how-to-freeze-dry-eggs']
+  .map((id) => posts.find((p) => p.id === id)).filter(Boolean);
 const counts = Object.fromEntries(Object.keys(CATEGORIES).map((k) => [k, posts.filter((p) => p.data.category === k).length]));
 ---
-<Base title={`${SITE.name}: Home Freeze Drying Recipes & Guides`} description={SITE.description}>
+<Base title={`Home Freeze Drying Recipes & Guides | ${SITE.name}`} description={SITE.description}>
   <section class="hero">
     <div class="wrap">
       <h1>Home freeze drying, explained step by step</h1>
       <p>Recipes for candy, fruit, eggs, meat and full meals, plus straight answers on which freeze dryer to buy, what it costs to run and how to fix it when something goes wrong.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="prose hub-intro">
+        <h2>New to home freeze drying? Start here</h2>
+        <p>A home freeze dryer freezes food, then pulls the ice out as vapor under a vacuum. The result is light, crunchy food that keeps its shape, color and flavor, and can be stored for years when it's sealed properly.</p>
+        <p>Freeze Dry Club covers the whole process in plain English: what you can freeze dry, how to prep and load trays, how to tell when food is done, and how to package it so it lasts. You'll also find recipes for freeze dried candy, eggs, fruit and full meals, plus honest guides to buying and maintaining a freeze dryer.</p>
+      </div>
+      <div class="grid">
+        {start.map((p) => <PostCard post={p} />)}
+      </div>
     </div>
   </section>
 

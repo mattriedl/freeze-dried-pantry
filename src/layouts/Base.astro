@@ -2,11 +2,14 @@
 import SEO from '../components/SEO.astro';
 import Analytics from '../components/Analytics.astro';
 import { SITE, CATEGORIES } from '../site.config.mjs';
+import { getPublishedPosts } from '../lib/posts.js';
 import '../styles/global.css';
 
 const props = Astro.props;
 const year = new Date().getFullYear();
-const nav = ['basics', 'candy', 'fruit', 'meat-eggs-dairy', 'meals', 'machines'];
+// Only link topics that have published articles, so menus never point at a 404.
+const liveCats = new Set((await getPublishedPosts()).map((p) => p.data.category));
+const nav = ['basics', 'candy', 'fruit', 'vegetables', 'meat-eggs-dairy', 'meals', 'pets', 'machines'].filter((c) => liveCats.has(c));
 
 const siteSchema = [
   {
@@ -76,7 +79,7 @@ const siteSchema = [
         <div>
           <p class="foot-h">Topics</p>
           <ul>
-            {Object.entries(CATEGORIES).map(([k, c]) => <li><a href={`/category/${k}/`}>{c.name}</a></li>)}
+            {Object.entries(CATEGORIES).filter(([k]) => liveCats.has(k)).map(([k, c]) => <li><a href={`/category/${k}/`}>{c.name}</a></li>)}
           </ul>
         </div>
         <div>

@@ -37,16 +37,20 @@ const schema = [
   },
 ];
 ---
-<Base title={`${c.name}: Freeze Drying Guides`} description={`${c.description} Step-by-step guides from ${SITE.name}.`} schema={schema}>
+<Base title={c.seoTitle} description={`${c.description} Step-by-step home freeze drying guides from ${SITE.name}.`} schema={schema}>
   <section class="hero">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li>{c.name}</li></ol></nav>
-      <h1>{c.name}</h1>
+      <h1>{c.seoTitle.split(':')[0]}</h1>
       <p>{c.description}</p>
     </div>
   </section>
   <section class="section">
     <div class="wrap">
+      <div class="prose hub-intro">
+        {c.intro.map((para) => <p>{para}</p>)}
+      </div>
+      <h2>{posts.length === 1 ? 'Guide' : `All ${posts.length} guides`}</h2>
       <div class="grid">
         {posts.map((p) => <PostCard post={p} showCat={false} />)}
       </div>

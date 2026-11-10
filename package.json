@@ -4,10 +4,11 @@
   "description": "",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/og-images.mjs && astro build",
     "preview": "astro preview",
     "indexnow": "node scripts/indexnow.mjs",
-    "next": "node scripts/autopost.mjs next"
+    "next": "node scripts/autopost.mjs next",
+    "og": "node scripts/og-images.mjs"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +16,8 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
-    "astro": "^7.4.8"
+    "astro": "^7.4.8",
+    "sharp": "^0.35.5"
   },
   "type": "module",
   "private": true,

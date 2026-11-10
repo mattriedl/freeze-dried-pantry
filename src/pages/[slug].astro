@@ -32,7 +32,12 @@ const schema = [
     dateModified: modified.toISOString(),
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     url,
-    image: `${SITE.url}/og-default.png`,
+    image: {
+      '@type': 'ImageObject',
+      url: `${SITE.url}/og/${post.id}.png`,
+      width: 1200,
+      height: 630,
+    },
     keywords: [data.keyword, ...data.secondaryKeywords].join(', '),
     articleSection: cat.name,
     author: { '@type': 'Organization', name: SITE.author, url: `${SITE.url}/about/` },
@@ -64,6 +69,7 @@ if (data.faq.length) {
   title={data.title}
   description={data.description}
   type="article"
+  image={`/og/${post.id}.png`}
   publishedTime={data.pubDate}
   modifiedTime={modified}
   schema={schema}
