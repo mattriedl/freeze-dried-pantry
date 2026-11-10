@@ -10,8 +10,9 @@
    "can you freeze dry cat food",
    "freeze dried minnows for cats"
   ],
-  "priority": 1080.0,
-  "status": "pending"
+  "priority": 1080,
+  "status": "published",
+  "publishedAt": "2026-11-10T19:49:39.815Z"
  },
  {
   "keyword": "freeze dried jolly ranchers",
@@ -24,7 +25,7 @@
    "how to freeze dry jolly ranchers",
    "can you freeze dry jolly ranchers"
   ],
-  "priority": 880.0,
+  "priority": 880,
   "status": "pending"
  },
  {
@@ -35,7 +36,7 @@
   "category": "fruit",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 880.0,
+  "priority": 880,
   "status": "pending"
  },
  {
@@ -49,7 +50,7 @@
    "how to freeze dry dog treats",
    "freeze dried chicken dog treats"
   ],
-  "priority": 880.0,
+  "priority": 880,
   "status": "pending"
  },
  {
@@ -64,7 +65,7 @@
    "what is the difference between freeze drying and dehydrating",
    "is freeze drying and dehydrating the same thing"
   ],
-  "priority": 760.0,
+  "priority": 760,
   "status": "pending"
  },
  {
@@ -77,7 +78,7 @@
   "secondaryKeywords": [
    "how to freeze dry mango"
   ],
-  "priority": 720.0,
+  "priority": 720,
   "status": "pending"
  },
  {
@@ -107,7 +108,7 @@
    "freeze dried raspberry powder",
    "freeze dried blueberry powder"
   ],
-  "priority": 580.0,
+  "priority": 580,
   "status": "pending"
  },
  {
@@ -121,7 +122,7 @@
    "how to freeze dry vegetables",
    "can you freeze dry vegetables"
   ],
-  "priority": 580.0,
+  "priority": 580,
   "status": "pending"
  },
  {
@@ -135,7 +136,7 @@
    "how to freeze dry marshmallows",
    "can you freeze dry marshmallows"
   ],
-  "priority": 480.0,
+  "priority": 480,
   "status": "pending"
  },
  {
@@ -150,7 +151,7 @@
    "how to freeze dry candy at home",
    "freeze dried candy"
   ],
-  "priority": 380.0,
+  "priority": 380,
   "status": "pending"
  },
  {
@@ -163,7 +164,7 @@
   "secondaryKeywords": [
    "how to freeze dry ice cream sandwiches"
   ],
-  "priority": 380.0,
+  "priority": 380,
   "status": "pending"
  },
  {
@@ -177,7 +178,7 @@
    "can you freeze dry m&ms",
    "freeze dried m&m"
   ],
-  "priority": 320.0,
+  "priority": 320,
   "status": "pending"
  },
  {
@@ -190,7 +191,7 @@
   "secondaryKeywords": [
    "how to freeze dry watermelon"
   ],
-  "priority": 320.0,
+  "priority": 320,
   "status": "pending"
  },
  {
@@ -203,7 +204,7 @@
   "secondaryKeywords": [
    "can you freeze dry pineapple"
   ],
-  "priority": 320.0,
+  "priority": 320,
   "status": "pending"
  },
  {
@@ -216,7 +217,7 @@
   "secondaryKeywords": [
    "can you freeze dry peaches"
   ],
-  "priority": 320.0,
+  "priority": 320,
   "status": "pending"
  },
  {
@@ -231,7 +232,7 @@
    "can you freeze dry pickles",
    "how to freeze dry pickles"
   ],
-  "priority": 320.0,
+  "priority": 320,
   "status": "pending"
  },
  {
@@ -247,7 +248,7 @@
    "freeze dried liver dog treats",
    "how to freeze dry liver for dogs"
   ],
-  "priority": 320.0,
+  "priority": 320,
   "status": "pending"
  },
  {
@@ -262,7 +263,7 @@
    "how to freeze dry at home",
    "freeze drying ideas"
   ],
-  "priority": 310.0,
+  "priority": 310,
   "status": "pending"
  },
  {
@@ -278,7 +279,7 @@
    "how to freeze dry flowers at home",
    "freeze drying bouquet"
   ],
-  "priority": 300.0,
+  "priority": 300,
   "status": "pending"
  },
  {
@@ -291,7 +292,7 @@
   "secondaryKeywords": [
    "harvest right commercial freeze dryer"
   ],
-  "priority": 300.0,
+  "priority": 300,
   "status": "pending"
  },
  {
@@ -304,7 +305,7 @@
   "secondaryKeywords": [
    "how to freeze dry lemonheads"
   ],
-  "priority": 260.0,
+  "priority": 260,
   "status": "pending"
  },
  {
@@ -317,7 +318,7 @@
   "secondaryKeywords": [
    "how to freeze dry cherries"
   ],
-  "priority": 260.0,
+  "priority": 260,
   "status": "pending"
  },
  {
@@ -328,7 +329,7 @@
   "category": "fruit",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 260.0,
+  "priority": 260,
   "status": "pending"
  },
  {
@@ -339,7 +340,7 @@
   "category": "vegetables",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 260.0,
+  "priority": 260,
   "status": "pending"
  },
  {
@@ -353,7 +354,7 @@
    "can you freeze dry cheese",
    "how to freeze dry cheese"
   ],
-  "priority": 260.0,
+  "priority": 260,
   "status": "pending"
  },
  {
@@ -369,7 +370,7 @@
    "how to freeze dry yogurt bites",
    "can you freeze dry yogurt"
   ],
-  "priority": 260.0,
+  "priority": 260,
   "status": "pending"
  },
  {
@@ -426,7 +427,7 @@
    "harvest right unable to achieve vacuum",
    "harvest right freeze dryer door seal"
   ],
-  "priority": 216.0,
+  "priority": 216,
   "status": "pending"
  },
  {
@@ -437,7 +438,7 @@
   "category": "machines",
   "type": "guide",
   "secondaryKeywords": [],
-  "priority": 216.0,
+  "priority": 216,
   "status": "pending"
  },
  {
@@ -450,7 +451,7 @@
   "secondaryKeywords": [
    "costco freeze dryer"
   ],
-  "priority": 216.0,
+  "priority": 216,
   "status": "pending"
  },
  {
@@ -461,7 +462,7 @@
   "category": "fruit",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 200.0,
+  "priority": 200,
   "status": "pending"
  },
  {
@@ -505,7 +506,7 @@
    "vacuum chamber for freeze drying",
    "homemade freeze drying"
   ],
-  "priority": 184.0,
+  "priority": 184,
   "status": "pending"
  },
  {
@@ -519,7 +520,7 @@
    "freeze drying cookbook",
    "freeze drying ideas"
   ],
-  "priority": 176.0,
+  "priority": 176,
   "status": "pending"
  },
  {
@@ -547,7 +548,7 @@
    "mini freeze dryer",
    "small freeze dryer machines"
   ],
-  "priority": 160.0,
+  "priority": 160,
   "status": "pending"
  },
  {
@@ -574,7 +575,7 @@
    "how to freeze dry lemons",
    "can you freeze dry lemons"
   ],
-  "priority": 144.0,
+  "priority": 144,
   "status": "pending"
  },
  {
@@ -601,7 +602,7 @@
   "secondaryKeywords": [
    "freeze dried food shelf life"
   ],
-  "priority": 140.0,
+  "priority": 140,
   "status": "pending"
  },
  {
@@ -616,7 +617,7 @@
    "harvest right pump oil",
    "harvest right oil filter"
   ],
-  "priority": 136.0,
+  "priority": 136,
   "status": "pending"
  },
  {
@@ -627,7 +628,7 @@
   "category": "basics",
   "type": "guide",
   "secondaryKeywords": [],
-  "priority": 118.0,
+  "priority": 118,
   "status": "pending"
  },
  {
@@ -641,7 +642,7 @@
    "can you freeze dry ground beef",
    "how to freeze dry beef"
   ],
-  "priority": 118.0,
+  "priority": 118,
   "status": "pending"
  },
  {
@@ -655,7 +656,7 @@
    "used freeze dryer for sale",
    "used harvest right freeze dryer"
   ],
-  "priority": 104.0,
+  "priority": 104,
   "status": "pending"
  },
  {
@@ -670,7 +671,7 @@
    "freeze dryer skittles",
    "how to freeze dry skittles at home"
   ],
-  "priority": 96.0,
+  "priority": 96,
   "status": "pending"
  },
  {
@@ -684,7 +685,7 @@
    "harvest right wifi upgrade kit",
    "harvest right wifi dongle"
   ],
-  "priority": 92.0,
+  "priority": 92,
   "status": "pending"
  },
  {
@@ -698,7 +699,7 @@
    "freeze-drying trays",
    "harvest right trays"
   ],
-  "priority": 92.0,
+  "priority": 92,
   "status": "pending"
  },
  {
@@ -727,7 +728,7 @@
    "blue alpine freeze dryer vs harvest right",
    "blue alpine freeze dryer"
   ],
-  "priority": 82.0,
+  "priority": 82,
   "status": "pending"
  },
  {
@@ -741,7 +742,7 @@
    "how to freeze dry jello",
    "can you freeze dry jello"
   ],
-  "priority": 78.0,
+  "priority": 78,
   "status": "pending"
  },
  {
@@ -757,7 +758,7 @@
    "how to freeze dry eggs at home",
    "how to freeze dry scrambled eggs"
   ],
-  "priority": 78.0,
+  "priority": 78,
   "status": "pending"
  },
  {
@@ -786,7 +787,7 @@
    "harvest right oxygen absorbers",
    "freeze drying bags"
   ],
-  "priority": 74.0,
+  "priority": 74,
   "status": "pending"
  },
  {
@@ -799,7 +800,7 @@
   "secondaryKeywords": [
    "harvest right coupon code"
   ],
-  "priority": 74.0,
+  "priority": 74,
   "status": "pending"
  },
  {
@@ -814,7 +815,7 @@
    "is freeze dried fruit healthy",
    "is freeze dried fruit nutritious"
   ],
-  "priority": 70.0,
+  "priority": 70,
   "status": "pending"
  },
  {
@@ -829,7 +830,7 @@
    "freeze drying accessories",
    "harvest right impulse sealer"
   ],
-  "priority": 70.0,
+  "priority": 70,
   "status": "pending"
  },
  {
@@ -845,7 +846,7 @@
    "can you freeze dry without a machine",
    "freeze-drying in freezer"
   ],
-  "priority": 68.0,
+  "priority": 68,
   "status": "pending"
  },
  {
@@ -859,7 +860,7 @@
    "harvest right freeze dryer",
    "is harvest right worth it"
   ],
-  "priority": 66.0,
+  "priority": 66,
   "status": "pending"
  },
  {
@@ -870,7 +871,7 @@
   "category": "machines",
   "type": "guide",
   "secondaryKeywords": [],
-  "priority": 66.0,
+  "priority": 66,
   "status": "pending"
  },
  {
@@ -883,7 +884,7 @@
   "secondaryKeywords": [
    "how to freeze dry tomatoes"
   ],
-  "priority": 64.0,
+  "priority": 64,
   "status": "pending"
  },
  {
@@ -899,7 +900,7 @@
    "can you freeze dry meat",
    "how to freeze dry meat at home"
   ],
-  "priority": 64.0,
+  "priority": 64,
   "status": "pending"
  },
  {
@@ -912,7 +913,7 @@
   "secondaryKeywords": [
    "how to freeze dry butter"
   ],
-  "priority": 64.0,
+  "priority": 64,
   "status": "pending"
  },
  {
@@ -925,7 +926,7 @@
   "secondaryKeywords": [
    "how to freeze dry honey"
   ],
-  "priority": 64.0,
+  "priority": 64,
   "status": "pending"
  },
  {
@@ -949,7 +950,7 @@
   "secondaryKeywords": [
    "harvest right premier pump"
   ],
-  "priority": 62.0,
+  "priority": 62,
   "status": "pending"
  },
  {
@@ -963,7 +964,7 @@
    "freeze dried blueberries",
    "how to freeze dry blueberries at home"
   ],
-  "priority": 52.0,
+  "priority": 52,
   "status": "pending"
  },
  {
@@ -978,7 +979,7 @@
    "how to freeze dry apple slices",
    "are freeze dried apples healthy"
   ],
-  "priority": 52.0,
+  "priority": 52,
   "status": "pending"
  },
  {
@@ -992,7 +993,7 @@
    "what can you freeze dry besides food",
    "what not to freeze dry"
   ],
-  "priority": 50.0,
+  "priority": 50,
   "status": "pending"
  },
  {
@@ -1005,7 +1006,7 @@
   "secondaryKeywords": [
    "harvest right freeze dryer software update"
   ],
-  "priority": 50.0,
+  "priority": 50,
   "status": "pending"
  },
  {
@@ -1041,7 +1042,7 @@
   "category": "candy",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 42.0,
+  "priority": 42,
   "status": "pending"
  },
  {
@@ -1055,7 +1056,7 @@
    "freeze dried bananas",
    "can you freeze dry bananas"
   ],
-  "priority": 42.0,
+  "priority": 42,
   "status": "pending"
  },
  {
@@ -1068,7 +1069,7 @@
   "secondaryKeywords": [
    "how to freeze dry peppers"
   ],
-  "priority": 42.0,
+  "priority": 42,
   "status": "pending"
  },
  {
@@ -1082,7 +1083,7 @@
    "freeze dried chicken",
    "can you freeze dry chicken"
   ],
-  "priority": 42.0,
+  "priority": 42,
   "status": "pending"
  },
  {
@@ -1095,7 +1096,7 @@
   "secondaryKeywords": [
    "freeze dryer worth the money"
   ],
-  "priority": 40.0,
+  "priority": 40,
   "status": "pending"
  },
  {
@@ -1108,7 +1109,7 @@
   "secondaryKeywords": [
    "how much electricity does a freeze dryer use"
   ],
-  "priority": 40.0,
+  "priority": 40,
   "status": "pending"
  },
  {
@@ -1123,7 +1124,7 @@
    "can you freeze dry candy in a dehydrator",
    "how to freeze dry candy in air fryer"
   ],
-  "priority": 34.0,
+  "priority": 34,
   "status": "pending"
  },
  {
@@ -1140,7 +1141,7 @@
    "how to freeze dry parsley",
    "how to freeze dry cilantro"
   ],
-  "priority": 34.0,
+  "priority": 34,
   "status": "pending"
  },
  {
@@ -1153,7 +1154,7 @@
   "secondaryKeywords": [
    "can you freeze dry beer"
   ],
-  "priority": 34.0,
+  "priority": 34,
   "status": "pending"
  },
  {
@@ -1166,7 +1167,7 @@
   "secondaryKeywords": [
    "freeze dried raspberries"
   ],
-  "priority": 28.0,
+  "priority": 28,
   "status": "pending"
  },
  {
@@ -1179,7 +1180,7 @@
   "secondaryKeywords": [
    "how to freeze dry avocados"
   ],
-  "priority": 28.0,
+  "priority": 28,
   "status": "pending"
  },
  {
@@ -1193,7 +1194,7 @@
    "can you freeze dry potatoes",
    "how to freeze dry mashed potatoes"
   ],
-  "priority": 28.0,
+  "priority": 28,
   "status": "pending"
  },
  {
@@ -1206,7 +1207,7 @@
   "secondaryKeywords": [
    "can you freeze dry sausage"
   ],
-  "priority": 28.0,
+  "priority": 28,
   "status": "pending"
  },
  {
@@ -1220,7 +1221,7 @@
    "can you freeze dry nuts",
    "can you freeze dry peanuts"
   ],
-  "priority": 28.0,
+  "priority": 28,
   "status": "pending"
  },
  {
@@ -1233,7 +1234,7 @@
   "secondaryKeywords": [
    "how to freeze dry sourdough starter"
   ],
-  "priority": 28.0,
+  "priority": 28,
   "status": "pending"
  },
  {
@@ -1244,7 +1245,7 @@
   "category": "candy",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 22.0,
+  "priority": 22,
   "status": "pending"
  },
  {
@@ -1255,7 +1256,7 @@
   "category": "fruit",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 22.0,
+  "priority": 22,
   "status": "pending"
  },
  {
@@ -1268,7 +1269,7 @@
   "secondaryKeywords": [
    "can you freeze dry cooked rice"
   ],
-  "priority": 22.0,
+  "priority": 22,
   "status": "pending"
  },
  {
@@ -1281,7 +1282,7 @@
   "secondaryKeywords": [
    "can you freeze dry homemade pasta"
   ],
-  "priority": 22.0,
+  "priority": 22,
   "status": "pending"
  },
  {
@@ -1294,7 +1295,7 @@
   "secondaryKeywords": [
    "how to freeze dry dog food at home"
   ],
-  "priority": 22.0,
+  "priority": 22,
   "status": "pending"
  },
  {
@@ -1305,7 +1306,7 @@
   "category": "candy",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 18.0,
+  "priority": 18,
   "status": "pending"
  },
  {
@@ -1318,7 +1319,7 @@
   "secondaryKeywords": [
    "how to freeze dry cucumbers"
   ],
-  "priority": 18.0,
+  "priority": 18,
   "status": "pending"
  },
  {
@@ -1329,7 +1330,7 @@
   "category": "meat-eggs-dairy",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 18.0,
+  "priority": 18,
   "status": "pending"
  },
  {
@@ -1343,7 +1344,7 @@
    "can you freeze dry cake",
    "can you freeze dry cookies"
   ],
-  "priority": 18.0,
+  "priority": 18,
   "status": "pending"
  },
  {
@@ -1354,7 +1355,7 @@
   "category": "meals",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 17.0,
+  "priority": 17,
   "status": "pending"
  },
  {
@@ -1365,7 +1366,7 @@
   "category": "candy",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 14.0,
+  "priority": 14,
   "status": "pending"
  },
  {
@@ -1378,7 +1379,7 @@
   "secondaryKeywords": [
    "can you freeze dry sweet potatoes"
   ],
-  "priority": 14.0,
+  "priority": 14,
   "status": "pending"
  },
  {
@@ -1389,7 +1390,7 @@
   "category": "vegetables",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 14.0,
+  "priority": 14,
   "status": "pending"
  },
  {
@@ -1402,7 +1403,7 @@
   "secondaryKeywords": [
    "can you freeze dry spinach"
   ],
-  "priority": 14.0,
+  "priority": 14,
   "status": "pending"
  },
  {
@@ -1413,7 +1414,7 @@
   "category": "vegetables",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 14.0,
+  "priority": 14,
   "status": "pending"
  },
  {
@@ -1427,7 +1428,7 @@
    "can you freeze dry heavy whipping cream",
    "can you freeze dry whole milk"
   ],
-  "priority": 14.0,
+  "priority": 14,
   "status": "pending"
  },
  {
@@ -1441,7 +1442,7 @@
    "can you freeze dry sour cream",
    "can you freeze dry cottage cheese"
   ],
-  "priority": 14.0,
+  "priority": 14,
   "status": "pending"
  },
  {
@@ -1455,7 +1456,7 @@
    "how to freeze dry salmon",
    "can you freeze dry shrimp"
   ],
-  "priority": 14.0,
+  "priority": 14,
   "status": "pending"
  },
  {
@@ -1469,7 +1470,7 @@
    "can you freeze dry jerky",
    "freeze dryer jerky"
   ],
-  "priority": 14.0,
+  "priority": 14,
   "status": "pending"
  },
  {
@@ -1480,7 +1481,7 @@
   "category": "candy",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1493,7 +1494,7 @@
   "secondaryKeywords": [
    "how to freeze dry tootsie rolls"
   ],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1506,7 +1507,7 @@
   "secondaryKeywords": [
    "can you freeze dry reese's pieces"
   ],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1517,7 +1518,7 @@
   "category": "candy",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1530,7 +1531,7 @@
   "secondaryKeywords": [
    "can you freeze dry twizzlers"
   ],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1543,7 +1544,7 @@
   "secondaryKeywords": [
    "can you freeze dry oranges"
   ],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1554,7 +1555,7 @@
   "category": "fruit",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1565,7 +1566,7 @@
   "category": "fruit",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1576,7 +1577,7 @@
   "category": "fruit",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1590,7 +1591,7 @@
    "can you freeze dry garlic",
    "how to freeze dry garlic cloves"
   ],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1601,7 +1602,7 @@
   "category": "vegetables",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1612,7 +1613,7 @@
   "category": "vegetables",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1623,7 +1624,7 @@
   "category": "vegetables",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1637,7 +1638,7 @@
    "how to freeze dry soup",
    "freeze-drying bone broth"
   ],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1648,7 +1649,7 @@
   "category": "meals",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1662,7 +1663,7 @@
    "how to freeze dry coffee",
    "can you freeze dry coffee beans"
   ],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1673,7 +1674,7 @@
   "category": "meals",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1684,7 +1685,7 @@
   "category": "meals",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 10.0,
+  "priority": 10,
   "status": "pending"
  },
  {
@@ -1695,7 +1696,7 @@
   "category": "candy",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 8.0,
+  "priority": 8,
   "status": "pending"
  },
  {
@@ -1708,7 +1709,7 @@
   "secondaryKeywords": [
    "can you freeze dry candy corn"
   ],
-  "priority": 8.0,
+  "priority": 8,
   "status": "pending"
  },
  {
@@ -1719,7 +1720,7 @@
   "category": "vegetables",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 8.0,
+  "priority": 8,
   "status": "pending"
  },
  {
@@ -1732,7 +1733,7 @@
   "secondaryKeywords": [
    "how to freeze dry beans"
   ],
-  "priority": 8.0,
+  "priority": 8,
   "status": "pending"
  },
  {
@@ -1745,7 +1746,7 @@
   "secondaryKeywords": [
    "how to freeze dry broccoli"
   ],
-  "priority": 8.0,
+  "priority": 8,
   "status": "pending"
  },
  {
@@ -1756,7 +1757,7 @@
   "category": "meat-eggs-dairy",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 8.0,
+  "priority": 8,
   "status": "pending"
  },
  {
@@ -1767,7 +1768,7 @@
   "category": "meat-eggs-dairy",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 8.0,
+  "priority": 8,
   "status": "pending"
  },
  {
@@ -1778,7 +1779,7 @@
   "category": "meals",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 8.0,
+  "priority": 8,
   "status": "pending"
  },
  {
@@ -1789,7 +1790,7 @@
   "category": "meals",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 8.0,
+  "priority": 8,
   "status": "pending"
  },
  {
@@ -1802,7 +1803,7 @@
   "secondaryKeywords": [
    "freeze dried taffy"
   ],
-  "priority": 6.0,
+  "priority": 6,
   "status": "pending"
  },
  {
@@ -1813,7 +1814,7 @@
   "category": "candy",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 6.0,
+  "priority": 6,
   "status": "pending"
  },
  {
@@ -1826,7 +1827,7 @@
   "secondaryKeywords": [
    "freeze dried chocolate bars"
   ],
-  "priority": 6.0,
+  "priority": 6,
   "status": "pending"
  },
  {
@@ -1837,7 +1838,7 @@
   "category": "candy",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 6.0,
+  "priority": 6,
   "status": "pending"
  },
  {
@@ -1848,7 +1849,7 @@
   "category": "candy",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 6.0,
+  "priority": 6,
   "status": "pending"
  },
  {
@@ -1859,7 +1860,7 @@
   "category": "candy",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 6.0,
+  "priority": 6,
   "status": "pending"
  },
  {
@@ -1870,7 +1871,7 @@
   "category": "fruit",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 6.0,
+  "priority": 6,
   "status": "pending"
  },
  {
@@ -1883,7 +1884,7 @@
   "secondaryKeywords": [
    "can you freeze dry celery"
   ],
-  "priority": 6.0,
+  "priority": 6,
   "status": "pending"
  },
  {
@@ -1894,7 +1895,7 @@
   "category": "meat-eggs-dairy",
   "type": "howto",
   "secondaryKeywords": [],
-  "priority": 6.0,
+  "priority": 6,
   "status": "pending"
  },
  {
@@ -1907,7 +1908,7 @@
   "secondaryKeywords": [
    "can you freeze dry cereal"
   ],
-  "priority": 6.0,
+  "priority": 6,
   "status": "pending"
  },
  {
@@ -1920,7 +1921,7 @@
   "secondaryKeywords": [
    "how to freeze dry chicken for dogs"
   ],
-  "priority": 6.0,
+  "priority": 6,
   "status": "pending"
  },
  {
