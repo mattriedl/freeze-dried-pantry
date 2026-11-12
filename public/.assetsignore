@@ -1,0 +1,2 @@
+# Built files that Cloudflare should not publish (Apache-only config for the old server).
+.htaccess

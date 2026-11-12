@@ -32,9 +32,9 @@ node scripts/autopost.mjs check <slug>
 
 ## Deployment
 
-Live at https://freezedryclub.com, hosted on Matt's own Ubuntu 24.04 / Apache web server behind Cloudflare (SSL: Let's Encrypt at the origin, auto-renewing).
+Live at https://freezedryclub.com, served by **Cloudflare Workers** (static assets) straight from Cloudflare's network.
 
-- The server checks this repo's `main` branch **every 2 minutes**. When it finds a new commit it pulls, runs the build (Node.js 22 on the server) and publishes `dist/`. Changes go live within about 2 minutes.
-- **If a build fails, the live site stays on the last good version.** Always run `npm run build` before pushing anyway.
-- `www.` and `http://` redirect to `https://freezedryclub.com`. Site-level rules (trailing-slash redirect, 404 page, caching headers, compression) live in `public/.htaccess` and deploy with the site; the Apache virtual host itself is managed on the server.
-- There is no GitHub Actions deploy; nothing in this repo needs server credentials.
+- On every push to `main`, Cloudflare (Workers Builds) runs `npm run build` and `npx wrangler deploy`, publishing `dist/`. Changes go live within about 2 to 3 minutes. **If a build fails, the live site stays on the last good version.** Always run `npm run build` before pushing anyway.
+- Settings: `wrangler.jsonc` (pages at `/slug/`, `/slug` redirects there, unknown addresses get `404.html` with a 404 status). Response headers: `public/_headers`. `www.` and `http://` redirect to `https://freezedryclub.com` through Cloudflare rules.
+- `public/.htaccess` is only for the old Apache server, which is kept as a fallback; `public/.assetsignore` stops Cloudflare publishing it.
+- There is no GitHub Actions deploy; nothing in this repo needs credentials.

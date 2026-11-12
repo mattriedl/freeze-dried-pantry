@@ -1,0 +1,15 @@
+// Cloudflare Workers settings for freezedryclub.com: the Astro build (dist/) served
+// straight from Cloudflare's network. Cloudflare runs `npm run build` and then
+// `npx wrangler deploy` on every push to main (Workers Builds).
+{
+  "name": "freezedryclub",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist",
+    // Pages live at /slug/ (Astro trailingSlash: 'always'); /slug redirects to /slug/.
+    "html_handling": "auto-trailing-slash",
+    // Unknown addresses get /404.html with a real 404 status.
+    "not_found_handling": "404-page"
+  },
+  "workers_dev": true
+}
