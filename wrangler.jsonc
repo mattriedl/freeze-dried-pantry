@@ -1,8 +1,9 @@
 // Cloudflare Workers settings for freezedryclub.com: the Astro build (dist/) served
-// straight from Cloudflare's network. Cloudflare runs `npm run build` and then
-// `npx wrangler deploy` on every push to main (Workers Builds).
+// straight from Cloudflare's network. GitHub Actions runs `npm run build` and then
+// `wrangler deploy` on every push to main (.github/workflows/deploy-cloudflare.yml).
 {
   "name": "freezedryclub",
+  "account_id": "85d2ba69d7730294ed5758d25f277d23",
   "compatibility_date": "2026-11-01",
   "assets": {
     "directory": "./dist",

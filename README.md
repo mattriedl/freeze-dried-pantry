@@ -34,7 +34,7 @@ node scripts/autopost.mjs check <slug>
 
 Live at https://freezedryclub.com, served by **Cloudflare Workers** (static assets) straight from Cloudflare's network.
 
-- On every push to `main`, Cloudflare (Workers Builds) runs `npm run build` and `npx wrangler deploy`, publishing `dist/`. Changes go live within about 2 to 3 minutes. **If a build fails, the live site stays on the last good version.** Always run `npm run build` before pushing anyway.
+- On every push to `main`, GitHub Actions (`.github/workflows/deploy-cloudflare.yml`) runs `npm run build` and `wrangler deploy`, publishing `dist/` (needs the repository secret `CLOUDFLARE_API_TOKEN`). Changes go live within about 2 to 3 minutes. **If a build fails, the live site stays on the last good version.** Always run `npm run build` before pushing anyway.
 - Settings: `wrangler.jsonc` (pages at `/slug/`, `/slug` redirects there, unknown addresses get `404.html` with a 404 status). Response headers: `public/_headers`. `www.` and `http://` redirect to `https://freezedryclub.com` through Cloudflare rules.
 - `public/.htaccess` is only for the old Apache server, which is kept as a fallback; `public/.assetsignore` stops Cloudflare publishing it.
-- There is no GitHub Actions deploy; nothing in this repo needs credentials.
+- `.github/workflows/cloudflare-domain.yml` shows which address the domain points to, switches it to the Worker, or rolls it back to the web server.
