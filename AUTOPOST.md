@@ -80,6 +80,15 @@ Skip this step if `src/site.config.mjs` still has `example` in its `url`.
 
 Otherwise wait about 3 minutes for Cloudflare to deploy, then submit the new URL with the OpenSEO `submit_indexnow_urls` tool if it's available. If not, run `node scripts/indexnow.mjs /<slug>/`. If both fail, note it and move on.
 
-## 6. Report
+## 6. Save the keywords to OpenSEO
 
-Reply with the article title, its URL path, word count, and anything that went wrong.
+Save the article's primary keyword and every secondary keyword to the OpenSEO saved-keywords list, so they can be rank-tracked later. This uses **no credits**.
+
+- Use the OpenSEO `save_keywords` tool with projectId `484073aa-5def-47b1-91dc-87eff2e25b0b` (project "freezedryclub.com") and `keywords` = the `keyword` plus all `secondaryKeywords` from the article's frontmatter.
+- Don't pass `tags` or `metrics`. Re-saving a keyword that's already there is harmless.
+- Do **not** add them to the rank tracker (that costs credits).
+- If the tool isn't available or fails, note it in the report and move on; it never blocks publishing.
+
+## 7. Report
+
+Reply with the article title, its URL path, word count, the keywords saved to OpenSEO, and anything that went wrong.
