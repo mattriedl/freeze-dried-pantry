@@ -132,7 +132,8 @@
    "freeze dried vegetables for soup"
   ],
   "priority": 580,
-  "status": "pending"
+  "status": "published",
+  "publishedAt": "2026-11-17T19:49:32.739Z"
  },
  {
   "keyword": "freeze dried marshmallows",
